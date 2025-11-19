@@ -308,10 +308,11 @@ footer {
 </main>
 
 <footer>
-    <p>© 2025 Jollibee Foods Corporation</p>
+    <p><span id="current-year">2025</span>© 2025 Jollibee Foods Corporation</p>
 </footer>
 
 <script>
+document.getElementById('current-year').textContent = new Date().getFullYear();
     const products = [
         { name: "Chicken Joy", description: "Crispylicious, juicylicious fried chicken loved by Filipinos worldwide!" },
         { name: "Burger Steak", description: "Tender beef patties served with savory mushroom gravy." },
