@@ -1,0 +1,363 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JFC Corporation - Jollibee | Home of the Chickenjoy</title>
+
+<meta name="description" content="Official fan page for Jollibee Foods Corporation (JFC), featuring products, company mission, and an interactive contact form.">
+
+<style>
+body {
+    font-family: "Times New Roman", sans-serif;
+    background-color: white;
+    margin: 2px;
+    padding: 10px;
+}
+header {
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+nav a:hover {
+    background-color: #ff4d4d;
+}
+h1, h2 {
+    text-align: center;
+}
+img {
+    border-radius: 15px;
+    border: 3px solid black;
+    max-width: 100%;
+    height: auto;
+    display: block; 
+    margin: 20px auto;
+}
+.product-image { 
+    width: 80px; 
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin: 5px auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+}
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+footer {
+    font-style: italic;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+}
+.objectives, ol {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    line-height: 1.8;
+}
+.objectives ul {
+    list-style-type: disc;
+    padding-left: 40px;
+}
+
+.interactive-section {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px dashed red;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    background-color: #fff5f5;
+}
+#result {
+    font-weight: bold;
+    color: red;
+    margin-top: 15px;
+    min-height: 20px;
+}
+
+.contact-form-container {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 50px;
+    background: lightgray;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px gray;
+}
+.contact-form-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 95%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.contact-form-container button {
+    background-color: RED;
+    color: white;
+    border-radius: 500px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    transition: background-color 0.3s;
+}
+.contact-form-container button:hover {
+    background-color: #cc0000;
+}
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid gray;
+    background-color: white;
+    border-radius: 50px;
+    text-align: center;
+    min-height: 100px;
+}
+@media (max-width: 600px) {
+    header, footer {
+        padding: 15px 5px;
+    }
+    nav a {
+        margin: 0 8px;
+        font-size: 0.9em;
+    }
+    .objectives, ol, .interactive-section, .contact-form-container {
+        width: 95%;
+        padding: 15px;
+    }
+    .contact-form-container {
+        border-radius: 20px;
+    }
+    .product-image {
+        width: 60px;
+        height: 60px;
+    }
+}
+</style>
+</head>
+
+<body>
+<header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<main>
+<section id="home">
+    <h1 style="color: red;"><strong>JFC Corporation</strong></h1>
+    <div style="text-align:center;">
+        <img src="https://business.inquirer.net/files/2025/03/JollibeeFoods-Corp-JFC-25March2025_2.png" width="450" alt="Jollibee Foods Corporation corporate logo and building facade">
+    </div>
+</section>
+<section id="about">
+    <h2>About Us</h2>
+    <p style="width: 800px; margin: auto; text-align: center;">
+        <strong>Jollibee Foods Corporation (JFC)</strong> is a Filipino multinational fast food company
+        founded in 1975. Today, it operates over 6,600 stores across 34 countries, serving customers through
+        beloved brands like Jollibee, Chowking, Greenwich, and The Coffee Bean & Tea Leaf.
+    </p>
+</section>
+
+<section id="mission">
+    <h2>Mission & Projects</h2>
+    <p style="width: 800px; margin: auto; text-align: center;">
+        The <em>Jollibee Group</em> aims to spread joy through superior-tasting food and excellent
+        customer experiences. Guided by the “Joy for Tomorrow” initiative, the company focuses on
+        sustainability, food safety, community support, and employee welfare aligned with the UN Sustainable
+        Development Goals.
+    </p>
+</section>
+
+<div class="objectives">
+    <p><strong>Main Objectives</strong></p>
+    <ul>
+        <li>Deliver Great-Tasting Food</li>
+        <li>Ensure Excellent Customer Experience</li>
+        <li>Expand Global Presence</li>
+        <li>Achieve Sustainable Growth</li>
+        <li>Support Communities</li>
+        <li>Promote Filipino Pride</li>
+    </ul>
+</div>
+<hr>
+<section id="products">
+    <h2>Our Products</h2>
+    <p style="width: 800px; margin: auto; text-align: center;">
+        Jollibee offers meals made with love and care — from crispy Chickenjoy to the sweet and savory
+        Jolly Spaghetti. Below are some of our all-time favorites:
+    </p>
+    <ol class="objectives">
+        <li>Chicken Joy</li>
+        <li>Burger Steak</li>
+        <li>Yum Burger</li>
+        <li>Jolly Spaghetti</li>
+        <li>Peach Mango Pie</li><br>
+    </ol>
+    <table border="1" cellpadding="10">
+        <tr style="background-color: #f2f2f2;">
+            <th>Food</th>
+            <th>Image</th> <th>Price (PHP)</th>
+        </tr>
+        <tr>
+            <td>Chicken Joy</td>
+            <td><img src="https://assets.jollibeecanada.com/products/chickenjoy_original.png" alt="Jollibee Chickenjoy with gravy" class="product-image"></td>
+            <td>₱75</td>
+        </tr>
+        <tr>
+            <td>Burger Steak</td>
+            <td><img src="https://assets.jollibeecanada.com/products/burgersteak_original.png" alt="Jollibee Burger Steak with mushroom gravy" class="product-image"></td>
+            <td>₱60</td>
+        </tr>
+        <tr>
+            <td>Yum Burger</td>
+            <td><img src="https://assets.jollibee.com.ph/uploads/2020/09/YumBurger.png" alt="Jollibee Yum Burger" class="product-image"></td>
+            <td>₱40</td>
+        </tr>
+        <tr>
+            <td>Jolly Spaghetti</td>
+            <td><img src="https://assets.jollibeecanada.com/products/jollyspaghetti_original.png" alt="Jollibee Jolly Spaghetti with hotdogs and cheese" class="product-image"></td>
+            <td>₱55</td>
+        </tr>
+        <tr>
+            <td>Peach Mango Pie</td>
+            <td><img src="https://assets.jollibeecanada.com/products/peachmangopie_original.png" alt="Jollibee Peach Mango Pie" class="product-image"></td>
+            <td>₱35</td>
+        </tr>
+    </table>
+</section>
+
+    <div class="interactive-section">
+        <h2>Pick Your Favorite Jollibee Product 🍗</h2>
+        <p>Select from the list to learn more:</p>
+        <select id="productSelect">
+            <option value="">-- Choose a product --</option>
+            <option value="Chicken Joy">Chicken Joy</option>
+            <option value="Burger Steak">Burger Steak</option>
+            <option value="Yum Burger">Yum Burger</option>
+            <option value="Jolly Spaghetti">Jolly Spaghetti</option>
+            <option value="Peach Mango Pie">Peach Mango Pie</option>
+        </select>
+        <button onclick="showFavorite()">Show Details</button>
+        <p id="result"></p>
+    </div>
+
+    <hr>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <table>
+            <tr><th>Contact Type</th><th>Information</th></tr>
+            <tr><td>Delivery Hotline</td><td>#8700</td></tr>
+            <tr><td>Address</td><td>10/F Jollibee Plaza Building, Ortigas Center, Pasig City</td></tr>
+            <tr><td>Email</td><td><a href="mailto:customercare@jfc.com.ph">customercare@jfc.com.ph</a></td></tr>
+            <tr><td>Website</td><td><a href="https://www.jollibee.com.ph" target="_blank">www.jollibee.com.ph</a></td></tr>
+        </table>
+
+        <div class="contact-form-container">
+            <h2 style="display: block; color: red; text-align: center;">Message us now!</h2>
+            
+            <label>Full Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter Full Name" style="width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;">
+
+            <label>Contact:</label>
+            <input type="text" id="contactInput" placeholder="Enter Contact Number or Email" style="width: 95%; padding: 8px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;">
+
+            <label>Message</label>
+            <textarea id="messageInput" placeholder="Type your message here..." style="width: 95%; padding: 10px; height: 100px; margin-bottom: 20px; border: 1px solid gray; border-radius: 5px;"></textarea>
+            
+            <button type="button" onclick="processData()"><strong>SUBMIT</strong></button>
+
+            <div id="output" style="margin-top: 20px; padding: 10px; border: 1px solid gray; background-color: white; border-radius: 50px; text-align: center;">
+                <p style="text-align: center;"><strong>Your Data and Message:</strong></p>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2025 Jollibee Foods Corporation</p>
+</footer>
+
+<script>
+    const products = [
+        { name: "Chicken Joy", description: "Crispylicious, juicylicious fried chicken loved by Filipinos worldwide!" },
+        { name: "Burger Steak", description: "Tender beef patties served with savory mushroom gravy." },
+        { name: "Yum Burger", description: "A classic Filipino-style burger with a sweet, flavorful dressing." },
+        { name: "Jolly Spaghetti", description: "Sweet-style spaghetti topped with cheese and hotdog slices." },
+        { name: "Peach Mango Pie", description: "Crispy crust with a hot, sweet filling made from real peaches and mangoes." }
+    ];
+
+    function showFavorite() {
+        const select = document.getElementById("productSelect");
+        const result = document.getElementById("result");
+        const chosen = select.value;
+
+        if (!chosen) {
+            result.textContent = "Please select a product first.";
+            result.style.color = "gray";
+            return;
+        }
+        
+        const product = products.find(p => p.name === chosen);
+        result.textContent = `${product.name}: ${product.description}`;
+        result.style.color = "red";
+    }
+
+    function processData() {
+        let nameValue = document.getElementById('nameInput').value.trim();
+        let contactValue = document.getElementById('contactInput').value.trim();
+        let messageValue = document.getElementById('messageInput').value.trim();
+        
+        let outputDiv = document.getElementById('output');
+        
+        if (nameValue === "" || contactValue === "" || messageValue === "") {
+            outputDiv.innerHTML = '<p style="color: red; font-weight: bold;">Please fill out all fields before submitting.</p>';
+            return;
+        }
+
+        let listOutput = `
+        <h2 style="color: red; font-weight: bold; margin-bottom: 20px; font-family: Arial, sans-serif;">Your Information:</h2><hr>
+        <ul style="list-style-type: none; text-align: left; padding-left: 0; margin-top: 20px;">
+            <li><strong>Full Name:</strong> ${nameValue}</li>
+            <li><strong>Contact:</strong> ${contactValue}</li>
+            <li><strong>Message:</strong> ${messageValue}</li>
+        </ul>`;
+
+        outputDiv.innerHTML = listOutput; 
+    }
+</script>
+</body>
+</html>
